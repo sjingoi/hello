@@ -26,7 +26,7 @@ class Client {
     }
     message_handler(message) {
         if (typeof (message) === 'string') {
-            //console.log(message);
+            //l,;l;,,console.log(message);
             var pkg = JSON.parse(message);
             if (pkg.type === 'sdp') {
                 console.log("Recieved SDP");
@@ -83,5 +83,5 @@ io.on('connection', (socket) => {
     }
     clients.push(client);
 });
-http.listen(8080, () => console.log("Listening on http://localhost:8080"));
+http.listen(8080, "192.168.0.60", () => console.log("Listening on 192.168.0.61:8080"));
 //# sourceMappingURL=index.js.map
